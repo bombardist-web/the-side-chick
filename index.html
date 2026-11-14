@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Side-Chick | Your Sidekick for Finds Worth Buying</title>
+  <meta name="description" content="Discover clever finds, everyday favorites, and products worth buying.">
+  <style>
+    :root {
+      --pink: #B76E79;
+      --blush: #F3E6E5;
+      --black: #171717;
+      --cream: #FAF7F4;
+      --white: #FFFFFF;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: var(--black);
+      background: var(--cream);
+    }
+
+    header {
+      background: var(--black);
+      color: var(--white);
+      text-align: center;
+      padding: 28px 16px;
+    }
+
+    .logo {
+      margin: 0;
+      font-family: Georgia, serif;
+      font-size: clamp(32px, 6vw, 52px);
+      letter-spacing: 3px;
+    }
+
+    .tagline {
+      color: #D9A0A6;
+      margin: 10px 0 0;
+      letter-spacing: 2px;
+      font-size: 12px;
+    }
+
+    nav {
+      background: var(--white);
+      text-align: center;
+      padding: 16px 10px;
+      border-bottom: 1px solid #eadcda;
+    }
+
+    nav a {
+      color: var(--black);
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 13px;
+      font-weight: bold;
+    }
+
+    nav a:hover { color: var(--pink); }
+
+    .hero {
+      text-align: center;
+      padding: 75px 20px;
+      background: var(--blush);
+    }
+
+    .hero h2 {
+      font-family: Georgia, serif;
+      font-size: clamp(32px, 5vw, 48px);
+      margin: 0 0 15px;
+    }
+
+    .hero p {
+      max-width: 550px;
+      margin: 0 auto;
+      line-height: 1.7;
+      color: #555;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 55px 20px;
+    }
+
+    .section h2 {
+      font-family: Georgia, serif;
+      text-align: center;
+      font-size: 32px;
+      margin-top: 0;
+    }
+
+    .intro {
+      text-align: center;
+      color: #666;
+      margin-bottom: 30px;
+    }
+
+    .categories, .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 18px;
+    }
+
+    .category, .product {
+      background: var(--white);
+      padding: 25px 20px;
+      text-align: center;
+      border: 1px solid #eee3e1;
+      border-radius: 8px;
+    }
+
+    .category {
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: var(--pink);
+    }
+
+    .product h3 {
+      font-family: Georgia, serif;
+      font-size: 21px;
+    }
+
+    .product p {
+      color: #666;
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    .coming {
+      display: inline-block;
+      color: var(--pink);
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .disclosure {
+      background: var(--blush);
+      text-align: center;
+      padding: 22px;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    footer {
+      background: var(--black);
+      color: var(--white);
+      text-align: center;
+      padding: 28px 15px;
+      font-size: 13px;
+    }
+
+    footer p { color: #D9A0A6; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 class="logo">THE SIDE-CHICK</h1>
+    <p class="tagline">YOUR SIDEKICK FOR FINDS WORTH BUYING.</p>
+  </header>
+
+  <nav>
+    <a href="#home">HOME</a>
+    <a href="#categories">CATEGORIES</a>
+    <a href="#finds">OUR FINDS</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h2>Your new favorite shopping sidekick.</h2>
+    <p>
+      From clever everyday essentials to fun little luxuries,
+      we're here to help you discover things worth knowing about
+      and worth adding to your cart.
+    </p>
+  </section>
+
+  <section class="section" id="categories">
+    <h2>What's Your Shopping Mood?</h2>
+    <p class="intro">A little something for every side of you.</p>
+
+    <div class="categories">
+      <div class="category">Everyday Finds</div>
+      <div class="category">Tech & Gadgets</div>
+      <div class="category">Home & Kitchen</div>
+      <div class="category">Beauty & Self-Care</div>
+      <div class="category">Fashion & Style</div>
+      <div class="category">Pets & Their People</div>
+    </div>
+  </section>
+
+  <section class="section" id="finds">
+    <h2>Worth A Look</h2>
+    <p class="intro">Our handpicked discoveries are coming soon.</p>
+
+    <div class="products">
+      <article class="product">
+        <h3>The Everyday Essential</h3>
+        <p>Useful little finds that make daily life easier.</p>
+        <span class="coming">FEATURED FINDS COMING SOON</span>
+      </article>
+
+      <article class="product">
+        <h3>The Gadget Edit</h3>
+        <p>Interesting tech and clever gadgets worth exploring.</p>
+        <span class="coming">FEATURED FINDS COMING SOON</span>
+      </article>
+
+      <article class="product">
+        <h3>The Feel-Good Edit</h3>
+        <p>Beauty, style and little luxuries to discover.</p>
+        <span class="coming">FEATURED FINDS COMING SOON</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="disclosure">
+    <strong>A little shopping transparency:</strong><br>
+    Some links on this website may be affiliate links.
+    We may earn a commission if you purchase through them,
+    at no additional cost to you.
+  </section>
+
+  <footer>
+    <strong>THE SIDE-CHICK</strong>
+    <p>Your sidekick for finds worth buying.</p>
+    <span>© 2026 The Side-Chick. All rights reserved.</span>
+  </footer>
+</body>
+</html>
